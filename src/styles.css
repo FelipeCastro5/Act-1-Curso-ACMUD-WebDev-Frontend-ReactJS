@@ -1,0 +1,129 @@
+:root {
+  --color-principal: #0d6efd;
+  --color-fondo: #f8f9fa;
+  --color-borde: #cccccc;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--color-fondo);
+  margin: 0;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #666666;
+}
+
+h2 {
+  color: #444444;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--color-borde);
+  padding-bottom: 5px;
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid var(--color-borde);
+  border-radius: 4px;
+  padding: 15px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.producto-info {
+  margin-bottom: 10px;
+}
+
+.producto-nombre {
+  font-size: 16px;
+  margin: 0 0 5px 0;
+  color: #222222;
+}
+
+.producto-categoria {
+  font-size: 12px;
+  color: #777777;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.producto-precio {
+  font-size: 18px;
+  font-weight: bold;
+  color: #198754;
+  margin: 5px 0;
+}
+
+.boton-accion {
+  background-color: var(--color-principal);
+  color: white;
+  border: 1px solid #0b5ed7;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.boton-accion:hover {
+  background-color: #0b5ed7;
+}
+
+.detalle-contenedor {
+  margin-top: 20px;
+}
+
+.detalle-producto {
+  background-color: #ffffff;
+  border: 1px solid var(--color-borde);
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.detalle-producto h3 {
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.detalle-producto p {
+  margin: 6px 0;
+  color: #333333;
+}
+
+.mensaje-vacio {
+  color: #777777;
+  font-style: italic;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px dashed var(--color-borde);
+  border-radius: 4px;
+}
